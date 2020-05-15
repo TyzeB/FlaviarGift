@@ -1,6 +1,7 @@
 # Flaviar Gift
 
 #### A simple gift order app using Vue.js and Symfony
+Check it out here: https://flaviar.herokuapp.com/
 
 ### How to run
 
