@@ -2,6 +2,7 @@
     "type": "project",
     "license": "proprietary",
     "require": {
+        "ext-pdo_sqlite": "*",
         "php": "^7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
