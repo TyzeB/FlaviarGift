@@ -1,0 +1,115 @@
+$brownish: #b27e6e;
+$greyish: #9e9090;
+$black: #111111;
+$very-light-pink: #f9f7f4;
+$shadowy: rgba(34, 34, 34, 0.3);
+$dark-green:  #398039;
+
+.recipient-form {
+  max-width: 390px;
+  margin: 0 auto;
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    margin-bottom: 16px;
+    border: 1px solid $brownish;
+    border-radius: 0;
+    font-family: Nitti;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $greyish;
+    height: 45px;
+    box-shadow: none;
+    &:focus {
+      box-shadow: 0 0 5px $brownish !important;
+    }
+  }
+  textarea {
+    height: 140px;
+  }
+  label {
+    font-family: MalagaOT;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $black;
+  }
+}
+
+.date-picker {
+  .date-dropdown-container {
+    .date-dropdown-select-wrapper {
+      .date-dropdown-select {
+        margin-bottom: 16px;
+        border: 1px solid $brownish;
+        border-radius: 0;
+        font-family: Nitti;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $greyish;
+        background: white;
+        height: 45px;
+        box-shadow: none;
+        &:focus {
+          box-shadow: 0 0 5px $brownish !important;
+        }
+      }
+    }
+  }
+}
+
+.vdatetime-popup__header {
+  background-color: $brownish;
+}
+.vdatetime-calendar__month__day.vdatetime-calendar__month__day--selected {
+  span {
+    span {
+      background-color: $brownish;
+    }
+  }
+}
+
+.vdatetime-popup__actions {
+  div {
+    color: $brownish;
+  }
+}
+
+.vdatetime-input {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.invisible {
+  display: none;
+}
+
+
+.btn-submit {
+  text-shadow: 1px 1px 0 $shadowy;
+  font-family: Nitti;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  border-radius: 0;
+  color: $very-light-pink;
+  width: 80%;
+  height: 56px;
+  background-color: $dark-green;
+}

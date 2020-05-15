@@ -1,0 +1,148 @@
+$brown: #b27e6e;
+$brown-shade: #a67e6e;
+$very-light-pink: #f9f7f4;
+$light-pink: #fdf8f2;
+$black: #111111;
+$dark-beige: #f5ede4;
+$brownish-grey: #69625e;
+$grey: #979797;
+
+@media only screen and (max-width: 768px) {
+  .details-form {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .details-form {
+    width: 46%;
+  }
+}
+
+.invisible {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.details-form {
+  background-color: $dark-beige;
+  margin-bottom: 160px;
+  padding-bottom: 80px;
+  margin-top: -124px;
+}
+
+.row-1 {
+  display: flex;
+  justify-content: center;
+  .duration--active,
+  .card-type--active,
+  .recipient--active {
+    border: 2px solid $brown;
+  }
+  .duration,
+  .card-type,
+  .recipient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 5px;
+    max-width: 180px;
+    min-height: 100px;
+    background-color: $light-pink;
+    .duration-lbl {
+      width: 140px !important;
+    }
+    .active {
+      background-color: $brown;
+      height: 30px;
+      right: -15px;
+      top: -15px;
+      width: 30px;
+      position: absolute;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      span {
+        color: $very-light-pink;
+        top: 12.5px;
+        left: 10px;
+        position: absolute;
+        -webkit-transform: rotate(-45deg) !important;
+        transform: rotate(-45deg) !important;
+      }
+    }
+  }
+  .question {
+    padding-top: 64px;
+    margin: 0 auto;
+    max-width: 240px;
+    font-family: MalataOT-Reg;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $black;
+  }
+}
+
+.lbl {
+  font-family: Nitti;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $brown-shade;
+  span {
+    font-family: MalagaOT-Reg;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: $brownish-grey;
+  }
+}
+
+.price {
+  font-family: MalagaOT;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $brown-shade;
+}
+
+.duration-lbl {
+  .price,
+  .lbl {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.disclaimer {
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 500px;
+  font-family: MalagaOT-Reg;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: italic;
+  letter-spacing: normal;
+  text-align: center;
+  color: $grey;
+}

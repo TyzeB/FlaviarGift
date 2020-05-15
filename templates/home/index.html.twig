@@ -1,0 +1,102 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  Flaviar
+{% endblock %}
+
+{% block body %}
+  <nav class="nav navbar navbar-expand">
+    <a class="navbar-brand" id="nav-logo" href="{{ app.request.get('home') }}">
+      <img src="{{ asset('build/img/logo.svg') }}"
+        class="img-fluid"
+        alt="Flaviar logo" />
+    </a>
+    <div class="navbar-nav ml-auto">
+      <a class="nav-link" href="#">About</a>
+      <a class="nav-link" href="#">Log In</a>
+    </div>
+  </nav>
+  <div class="info container">
+    <div class="text-center">
+      <h4 class="info-title">Start building their gift</h4>
+      <hr/>
+      <h6 class="info-small-title">Your Gift, Their Journey</h6>
+    </div>
+    <div class="row info-stuff">
+      <div class="col-md-4 col-sm-12 text-center">
+        <img src="{{ asset('build/img/picto_01.png')}}" />
+        <h4 class="info-subtitle">Personalize the card</h4>
+        <hr/>
+        <div class="info-text text-center">
+          <p>Choose their membership period, delivery method and add a personal handwritten message</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 text-center">
+        <img src="{{ asset('build/img/picto_02.png')}}" />
+        <h4 class="info-subtitle">Deliver the gift</h4>
+        <hr/>
+        <div class="info-text text-center">
+          <p>As soon as they receive their gift card, they will be able to claim their membership by following the instructions</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 text-center">
+        <img src="{{ asset('build/img/picto_03.png')}}" />
+        <h4 class="info-subtitle">Recap the rewards</h4>
+        <hr/>
+        <div class="info-text text-center">
+          <p>May 2018 be the year of exploration and tasting for you and yours!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="info-background">
+    <div>
+      <h1>
+          PERSONALIZE THEIR<br/>
+          GIFT CARD
+      </h1>
+    </div>
+  </div>
+  <div id="app">
+    <app></app>
+  </div>
+  <div class="faq container-fluid">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 text-center">
+            <h6 class="faq-title">Got questions?</h6>
+        </div>
+        <div class="col-md-5 col-sm-12 questions-left">
+          <ul class="list-unstyled float-lg-right">
+              <li><a href="">How much does it cost?</a></li>
+              <li><a href="">Can I ship Tasting Boxes directly to the recipient?</a></li>
+              <li><a href="">Can I buy multiple gifts?</a></li>
+              <li><a href="">How does it work for the recipient?</a></li>
+              <li><a href="">When will the First Box arrive?</a></li>
+          </ul>
+        </div>
+        <div class="col-md-5 col-sm-12 questions-right">
+          <ul class="list-unstyled float-lg-right">
+              <li><a href="">What happens when the Gift ends?</a></li>
+              <li><a href="">What counties do you ship to?</a></li>
+              <li><a href="">How many different spirits are included?</a></li>
+              <li><a href="">What recipient info is required from me?</a></li>
+              <li><a href="">Will you ask the recipients for billing info?</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 d-none d-sm-block seal-right">
+            <img class="img-fluid" src="{{ asset('build/img/picto_seal.svg') }}"></img>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="container brands"></div>
+  <footer>
+    <div class="text-center">
+      © 2018 Flaviar | CONTACT US AT:<a href="mailto:HELLO@FLAVIAR.COM">HELLO@FLAVIAR.COM</a>
+    </div>
+    <div class="text-center">
+      NEW YORK CITY | <a href="#">READ OUR TERMS & CONDITIONS</a>
+    </div>
+  </footer>
+{% endblock %}
