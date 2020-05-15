@@ -5,7 +5,7 @@
 ### How to run
 
 ```
-cd flaviar-gift
+cd FlaviarGift
 php composer install
 php bin/console doctrine:schema:update --force
 php bin/console make:migration
